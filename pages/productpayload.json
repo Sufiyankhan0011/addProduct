@@ -1,0 +1,48 @@
+{
+    "baseId" : "",
+    "productType" : {
+      "id" : "7fdffcdc-60a6-4ecd-9b17-725b94c4f845",
+      "typeId" : "product-type"
+      
+    },
+    "categories" : [ {
+      "typeId" : "category",
+      "id" : "2e91b72d-880a-44aa-a22d-ccaf6b30014f"
+    } ],
+    "name" : {
+      "en" : "Some Product"
+    },
+    "slug" : {
+      "en" : "product_slug_random-uuid"
+    },
+    "masterVariant" : {
+      "sku" : "SKU-1",
+      "prices" : [ {
+        "value" : {
+          "currencyCode" : "EUR",
+          "centAmount" : 4200
+        }
+      } ],
+      "attributes" : [{"name": "baseId", "value": "adasdasd"}],
+      "images" : [ {
+        "url" : "http://my.custom.cdn.net/master.png",
+        "label" : "Master Image",
+        "dimensions" : {
+          "w" : 303,
+          "h" : 197
+        }
+      } ]
+    },
+    "variants" : [ {
+      "attributes" : [{"name": "baseId", "value": "adasdasd"}],
+      "images" : [ {
+        "url" : "http://my.custom.cdn.net/variant.png",
+        "label" : "Variant Image",
+        "dimensions" : {
+          "w" : 303,
+          "h" : 197
+        }
+      } ]
+    } ]
+  }
+  
