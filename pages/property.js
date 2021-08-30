@@ -27,3 +27,9 @@ export function convertToSlug(Text) {
         .replace(/ +/g, '-')
         ;
 }
+
+function Welcome() {
+    return <h1>Hello</h1>;
+  }
+  
+  export default Welcome;
