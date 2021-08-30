@@ -30,3 +30,9 @@ align-items: flex-start;
 // margin-left:-1.5rem;
 // margin-right:0.5rem;
 // `;
+
+function Welcome() {
+  return <h1>Hello</h1>;
+}
+
+export default Welcome;
