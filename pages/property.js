@@ -1,10 +1,10 @@
 
 
-export const clientid = "0KikXxC_VUEbWb0PYhwj_52k";
-export const clientSecret = "b9kwe1ktvOqPzjkkg_2AcvdLDWZ9Qg75";
+export const clientid = "vp_89IUVJd7CD_GueiD8hKiP";
+export const clientSecret = "0trKB8Eswff9ijgqyez7CLpQV7Bry8DO";
 
 export const defaultEndpoint =
-    "https://api.us-central1.gcp.commercetools.com/sneakerhead/products/";
+    "https://api.us-central1.gcp.commercetools.com/onlinestore-poc/products/";
 export const authEndpoint =
     "https://auth.us-central1.gcp.commercetools.com/oauth/token?grant_type=client_credentials";
 
