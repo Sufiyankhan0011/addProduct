@@ -234,45 +234,122 @@ function Calci({ data }) {
                     <h1>Product Form</h1><br />
 
                     <div >
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Name
+                            </span>
+                            
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={name} onChange={e => setName(e.target.value)} placeholder='Enter the product name'></input>
+                        </label>
                         <br></br>
 
                         <br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Product Description
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={details} onChange={e => setDetails(e.target.value)} placeholder='Enter the product description'></input>
+                        </label>
                         <br></br>
 
-                        <br /><input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={price} onChange={e => setPrice(e.target.value)} placeholder='Displays the price'></input>
+                        <br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Price
+                            </span>
+                        <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={price} onChange={e => setPrice(e.target.value)} placeholder='Displays the price'></input>
+                        </label>
                         <br />
 
-                        <br /><input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={url} onChange={e => setUrl(e.target.value)} placeholder='Enter image url'></input>
+                        <br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Image URL
+                            </span>
+                        <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={url} onChange={e => setUrl(e.target.value)} placeholder='Enter image url'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Color
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={color} onChange={e => setColor(e.target.value)} placeholder='Enter color'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Size (Integer Number)
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={size} onChange={e => setSize(e.target.value)} placeholder='Enter Size'></input>
+                        </label>
                         <br /><br />
                         {/* <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={style} onChange={e => setStyle(e.target.value)} placeholder='Enter Style'></input> */}
                         {/* <br /><br /> */}
-
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Manufacturer ID
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={manufacturer} onChange={e => setManufacturer(e.target.value)} placeholder='Enter manufacturerId'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Matrix ID
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={matrix} onChange={e => setMatrix(e.target.value)} placeholder='Enter MatrixId'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                AID Maxmilan
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={maxmilan} onChange={e => setMaxmilan(e.target.value)} placeholder='Enter Aid Maxmilan'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Filter Size
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={filtersize} onChange={e => setFiltersize(e.target.value)} placeholder='Enter Filtersize'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Color Description
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={colordescription} onChange={e => setColordescription(e.target.value)} placeholder='Enter colordescription'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Product Details
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={detail} onChange={e => setDetail(e.target.value)} placeholder='Enter Details'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Sap External ID
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={sapid} onChange={e => setSapid(e.target.value)} placeholder='Enter SapExternalId'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Date
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='date' value={date} onChange={e => setDate(e.target.value)} placeholder='Enter Date'></input>
+                        </label>
                         <br /><br />
+                        <label>
+                            <span style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", fontWeight: 'bold' }}>
+                                Base ID
+                            </span>
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={base} onChange={e => setBase(e.target.value)} placeholder='Enter BaseId'></input>
-                        <br />
+                        </label>
+                        <br /><br />
 
-                        <button style={{ fontsize: "1em", height: "30PX", margin: "1em", padding: "0.25em 1em", border: "2px solid black", borderradius: "3px", color: "black", alignItems: "center", marginLeft: "3.5rem" }} onClick={handleSubmit.bind()} >SUBMIT</button><br></br>
+                        <button style={{cursor:'pointer', fontWeight:'bold', fontsize: "1em", height: "40PX", marginLeft: "-1.5rem", padding: "0.3rem", border: "2px solid black", borderradius: "8px", color: "black", alignItems: "center" }} onClick={handleSubmit.bind()} >SUBMIT</button><br></br>
 
                     </div>
                     {displaymessage}
