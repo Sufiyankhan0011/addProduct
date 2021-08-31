@@ -10,13 +10,15 @@ const ProductPayload = {
     "publish": true,
     "baseId": "",
     "productType": {
-        "id": "6d0fa435-2533-4be4-aa01-4625dce9fbd5",
+        "id": "4a2bbfbb-66d4-4845-9b3a-56f692ffcb01",
+        // "id": "6d0fa435-2533-4be4-aa01-4625dce9fbd5",
         "typeId": "product-type"
 
     },
     "categories": [{
         "typeId": "category",
-        "id": "c67897a2-047d-4101-9f07-7eb7fdedb514"
+        // "id": "c67897a2-047d-4101-9f07-7eb7fdedb514"
+        "id": "885c1b12-ebfe-4d40-b8df-70d31d91cf10"
     }],
     "name": {
         "en": "Some Product"
