@@ -42,28 +42,8 @@ const ProductPayload = {
             }
         }],
 
-        "attributes": [{ "name": "baseId", "value": "adasdasd" }, { "name": "color", "value": "black" }, { "name": "size", "value": "xss" }, { "name": "style", "value": "sporty" }, { "name": "articleNumberManufacturer", "value": "CROCKABC123" }, { "name": "matrixId", "value": "MACKS122" }, { "name": "articleNumberMax", "value": "ABCSHOE123" }, { "name": "commonSize", "value": "xss" }, {
-            "name": "colorFreeDefinition",
-            "value": {
-                "en": "greycolor"
-            }
-        },
-        {
-            "name": "details",
-            "value": [
-                {
-                    "en": "niceshoecolor"
-                }
-            ]
-        },
-        {
-            "name": "sapExternalId",
-            "value": "crockshoe567"
-        },
-        {
-            "name": "creationDate",
-            "value": "2021-08-01T00:00:00.000Z"
-        }],
+        // "attributes": [{ "name": "baseId", "value": "adasdasd" }, { "name": "color", "value": "black" }, { "name": "size", "value": "xss" }, { "name": "style", "value": "sporty" }, { "name": "articleNumberManufacturer", "value": "CROCKABC123" }, { "name": "matrixId", "value": "MACKS122" }, { "name": "articleNumberMax", "value": "ABCSHOE123" }, { "name": "commonSize", "value": "xss" }, {
+            "attributes": [{ "name": "color", "value": "black" }, { "name": "size", "value": "xss" }],
         "images": [{
             "url": "http://my.custom.cdn.net/master.png",
             "label": "Master Image",
@@ -74,7 +54,7 @@ const ProductPayload = {
         }]
     },
     "variants": [{
-        "attributes": [{ "name": "baseId", "value": "adasdasd" }, { "name": "style", "value": "sporty" }],
+        "attributes": [{ "name": "color", "value": "black" }, { "name": "size", "value": 7 }],
         "images": [{
             "url": "http://my.custom.cdn.net/variant.png",
             "label": "Variant Image",
@@ -84,7 +64,11 @@ const ProductPayload = {
             }
         }]
 
-    }]
+    }],
+    "taxCategory": {
+        "typeId": "tax-category",
+        "id": "f79f870d-0967-4380-8f68-bff00660dd21"
+      }
 }
 
 
@@ -171,19 +155,19 @@ function Calci({ data }) {
         const clientToken = res_auth.access_token;
         ProductPayload.name.en = name;
         ProductPayload.masterVariant.images[0].url = url;
-        ProductPayload.masterVariant.attributes[0].value = base;
-        ProductPayload.masterVariant.attributes[1].value = color;
-        ProductPayload.masterVariant.attributes[2].value = size;
-        ProductPayload.masterVariant.attributes[3].value = style;
+        // ProductPayload.masterVariant.attributes[0].value = base;
+        ProductPayload.masterVariant.attributes[0].value = color;
+        ProductPayload.masterVariant.attributes[1].value = parseInt(size);
+        // ProductPayload.masterVariant.attributes[3].value = style;
 
-        ProductPayload.masterVariant.attributes[4].value = manufacturer;
-        ProductPayload.masterVariant.attributes[5].value = matrix;
-        ProductPayload.masterVariant.attributes[6].value = maxmilan;
-        ProductPayload.masterVariant.attributes[7].value = filtersize;
-        ProductPayload.masterVariant.attributes[8].value.en = colordescription;
-        ProductPayload.masterVariant.attributes[9].value.en = detail;
-        ProductPayload.masterVariant.attributes[10].value = sapid;
-        ProductPayload.masterVariant.attributes[11].value = date;
+        // ProductPayload.masterVariant.attributes[4].value = manufacturer;
+        // ProductPayload.masterVariant.attributes[5].value = matrix;
+        // ProductPayload.masterVariant.attributes[6].value = maxmilan;
+        // ProductPayload.masterVariant.attributes[7].value = filtersize;
+        // ProductPayload.masterVariant.attributes[8].value.en = colordescription;
+        // ProductPayload.masterVariant.attributes[9].value.en = detail;
+        // ProductPayload.masterVariant.attributes[10].value = sapid;
+        // ProductPayload.masterVariant.attributes[11].value = date;
         ProductPayload.description.en = details;
         ProductPayload.masterVariant.prices[0].value.centAmount = parseInt(price);
         ProductPayload.slug.en = convertToSlug(name);
@@ -266,8 +250,8 @@ function Calci({ data }) {
                         <br /><br />
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={size} onChange={e => setSize(e.target.value)} placeholder='Enter Size'></input>
                         <br /><br />
-                        <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={style} onChange={e => setStyle(e.target.value)} placeholder='Enter Style'></input>
-                        <br /><br />
+                        {/* <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={style} onChange={e => setStyle(e.target.value)} placeholder='Enter Style'></input> */}
+                        {/* <br /><br /> */}
 
                         <input style={{ width: "130%", height: "40px", padding: "0.3rem", marginLeft: "-1.5rem", borderRadius: "8px" }} type='text' value={manufacturer} onChange={e => setManufacturer(e.target.value)} placeholder='Enter manufacturerId'></input>
                         <br /><br />
